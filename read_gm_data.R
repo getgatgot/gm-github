@@ -4,6 +4,7 @@ new <- read.csv("data/data-1957.csv")
 gdp <- rbind(gdp, new)
 
 # Calculate GDP
+# Doing some fantastic gdp calculations here - by Angela
 gdp['gdp'] <- gdp$pop * gdp$gdpPercap 
 # Subset variables
 keep <- c('country', 'year', 'lifeExp', 'gdp')
